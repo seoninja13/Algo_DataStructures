@@ -190,25 +190,21 @@ import turtle
 # print(toStr(1453,16))           
 
 # ===> Sierpinski  Triangle.
-# import turtle
 
-def drawTriangle(points,color,myTurtle):
-    myTurtle=turtle.Turtle()
-    myWin=turtle.Screen() 
-    myTurtle.fillcolor(color)
-    myTurtle.up()
-    myTurtle.goto(points[0][0],points[0][1])
-    myTurtle.down()
-    myTurtle.begin_fill()
-    myTurtle.goto(points[1][0],points[1][1])
-    myTurtle.goto(points[2][0],points[2][1])
-    myTurtle.goto(points[0][0],points[0][1])
-    myTurtle.end_fill()
-    myWin.exitonclick() 
+# def drawTriangle(points,color,myTurtle):
+#     myTurtle=turtle.Turtle()
+#     myWin=turtle.Screen() 
+#     myTurtle.fillcolor(color)
+#     myTurtle.up()
+#     myTurtle.goto(points[0][0],points[0][1])
+#     myTurtle.down()
+#     myTurtle.begin_fill()
+#     myTurtle.goto(points[1][0],points[1][1])
+#     myTurtle.goto(points[2][0],points[2][1])
+#     myTurtle.goto(points[0][0],points[0][1])
+#     myTurtle.end_fill()
 
-drawTriangle()
-
-
+# drawTriangle( [[0,10],[10,10],[0,20]],green,)
 
 # def getMid(p1,p2):
 #     return ( (p1[0]+p2[0]) / 2, (p1[1] + p2[1]) / 2)
@@ -239,8 +235,19 @@ drawTriangle()
 #    myWin.exitonclick()
 
 # main()
-            
-#   Changes made           
+
+def draw_triangle():
+    window = turtle.Screen()
+    window.bgcolor("green") #background color
+    tom = turtle.Turtle()
+    tom.forward(100) 
+    tom.left(120)
+    # tom.forward(100)
+    # tom.left(120)
+    # tom.forward(100)
+    window.exitonclick() #to exit
+
+draw_triangle()                  
            
 
                 
